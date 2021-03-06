@@ -20,9 +20,10 @@ body {
 
 header p {
   font-size: 24px;
-  color: #333;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   padding: 10px 30px;
+  background-color: rgb(255, 152, 152);
 }
 
 main {
@@ -42,7 +43,7 @@ main {
 }
 
 .text h1 {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 700;
   color: rgba(255, 0, 0, 0.815);
   line-height: 71px;
@@ -52,12 +53,11 @@ main {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  margin-top: 30px;
+  margin: 30px 0;
   color: #aaaaaa;
 }
 
 button {
-  margin: 50px 0;
   background-color: #333;
   color: white;
   border: none;
@@ -75,6 +75,10 @@ footer p {
 }
 
 @media screen and (min-width: 650px) {
+  main {
+    height: 70vh;
+  }
+
   .text {
     text-align: center;
   }
@@ -82,7 +86,6 @@ footer p {
   .scarecrow {
     height: 320px;
     width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -108,6 +111,7 @@ footer p {
   .scarecrow {
     height: 414.249px;
     width: 539.224px;
+    margin: 0 auto;
   }
 
   .text h1 {
