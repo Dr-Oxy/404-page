@@ -44,6 +44,7 @@ main {
 .text h1 {
   font-size: 48px;
   font-weight: 700;
+  color: rgba(255, 0, 0, 0.815);
   line-height: 71px;
 }
 
@@ -73,7 +74,19 @@ footer p {
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 650px) {
+  .text {
+    text-align: center;
+  }
+
+  .scarecrow {
+    height: 320px;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   main {
     height: 90vh;
     display: grid;
@@ -89,12 +102,12 @@ footer p {
   .text {
     padding: 0;
     grid-column: 7/12;
+    text-align: left;
   }
 
   .scarecrow {
     height: 414.249px;
     width: 539.224px;
-    margin: 0 auto;
   }
 
   .text h1 {
