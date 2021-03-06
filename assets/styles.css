@@ -35,11 +35,14 @@ main {
   width: 286.83px;
   display: block;
   margin: 70px auto;
+
+  animation: rotat 2s ease-out 2 alternate-reverse, size 1s ease-in 0.3s 2;
 }
 
 .text {
   padding: 10px 20px;
   letter-spacing: -0.035em;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .text h1 {
@@ -47,6 +50,8 @@ main {
   font-weight: 700;
   color: rgba(255, 0, 0, 0.815);
   line-height: 71px;
+
+  animation: color 2s ease-in 2 both;
 }
 
 .text p {
@@ -117,10 +122,52 @@ footer p {
   .text h1 {
     font-size: 60px;
     line-height: 95px;
+
+    animation: text-move 1s ease-in;
   }
 
   .text p {
     font-size: 28px;
     line-height: 36px;
+  }
+}
+
+/* animations */
+
+@keyframes rotat {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes size {
+  0% {
+    height: 220.352px;
+    width: 286.83px;
+  }
+
+  50% {
+    height: 180px;
+    width: 210px;
+  }
+
+  100% {
+    height: 300.352px;
+    width: 420.83px;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: rgb(233, 233, 233);
+  }
+  50% {
+    color: rgb(230, 179, 179);
+  }
+  100% {
+    color: rgba(255, 0, 0, 0.815);
   }
 }
